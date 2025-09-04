@@ -13,67 +13,71 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: #f4f7fa;
+      background: #fff8f3; /* light orange tint background */
     }
     .profile-card {
       background: #ffffff;
-      border-radius: 15px;
-      padding: 30px;
-      width: 350px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+      padding: 35px;
+      width: 380px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
       text-align: center;
-      border: 2px solid #e1e4e8;
+      border: 2px solid #ffe3d2;
     }
     .profile-card img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
-      border: 5px solid #0073b1;
+      border: 5px solid #f26a21; /* brand orange */
     }
     .profile-card h1 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       margin: 10px 0;
       color: #333;
     }
     .profile-card h3 {
       font-size: 1rem;
-      margin: 5px 0;
-      color: #555;
+      margin: 6px 0;
+      color: #444;
     }
     .tags {
-      margin: 15px 0;
+      margin: 18px 0;
       font-size: 0.9rem;
       color: #777;
     }
     .profile-card a {
-      color: #0073b1;
+      color: #f26a21;
       text-decoration: none;
+      font-weight: 500;
+    }
+    .profile-card a:hover {
+      text-decoration: underline;
     }
     .footer {
       margin-top: 20px;
-      font-size: 0.85rem;
-      color: #888;
+      font-size: 0.9rem;
+      color: #555;
     }
     .footer a {
-      color: #0073b1;
+      color: #f26a21;
       text-decoration: none;
     }
     @media (max-width: 768px) {
       .profile-card {
         width: 90%;
-        padding: 20px;
+        padding: 25px;
       }
       .profile-card img {
         width: 120px;
         height: 120px;
       }
       .profile-card h1 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
       .profile-card h3 {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
       }
     }
   </style>
