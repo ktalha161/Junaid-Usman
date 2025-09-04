@@ -24,7 +24,11 @@
       text-align: center;
       border: 2px solid #ffe3d2;
     }
-    .profile-card img {
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+    .profile-card img.profile {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -41,11 +45,6 @@
       font-size: 1rem;
       margin: 6px 0;
       color: #444;
-    }
-    .tags {
-      margin: 18px 0;
-      font-size: 0.9rem;
-      color: #777;
     }
     .profile-card a {
       color: #f26a21;
@@ -64,12 +63,25 @@
       color: #f26a21;
       text-decoration: none;
     }
+    .social-links {
+      margin-top: 15px;
+    }
+    .social-links img {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      vertical-align: middle;
+      transition: transform 0.2s;
+    }
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
     @media (max-width: 768px) {
       .profile-card {
         width: 90%;
         padding: 25px;
       }
-      .profile-card img {
+      .profile-card img.profile {
         width: 120px;
         height: 120px;
       }
@@ -84,15 +96,30 @@
 </head>
 <body>
   <div class="profile-card">
-    <a href="https://www.linkedin.com/in/junaid-u-603b581a/">
-      <img src="https://media.licdn.com/dms/image/v2/C4D03AQGavE114_u0xw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1622659611979?e=1759968000&v=beta&t=CRCInfvTGRTh9l7JO4IcXD6REsIg-Qfmbw7ha6oPFts" alt="Junaid Usman">
+    <!-- Legend Financial Logo -->
+    <a href="https://www.legendfinancial.co.uk/" target="_blank">
+      <img src="https://www.legendfinancial.co.uk/wp-content/uploads/2023/06/legend-financial-logo.png" alt="Legend Financial Logo" class="logo">
     </a>
-    <h1><a href="https://www.linkedin.com/in/junaid-u-603b581a/" target="_blank">JC</a></h1>
+
+    <!-- Profile Image -->
+    <img src="https://media.licdn.com/dms/image/v2/C4D03AQGavE114_u0xw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1622659611979?e=1759968000&v=beta&t=CRCInfvTGRTh9l7JO4IcXD6REsIg-Qfmbw7ha6oPFts" alt="JC" class="profile">
+
+    <!-- Profile Info -->
+    <h1>JC</h1>
     <h3>Senior Tax Partner</h3>
     <h3><a href="https://www.legendfinancial.co.uk/">Legend Financial</a></h3>
+
+    <!-- Contact -->
     <div class="footer">
       📞 <a href="tel:+442071019477">0207 101 9477</a><br>
       📧 <a href="mailto:jc@legendfinancial.co.uk">jc@legendfinancial.co.uk</a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/junaid-u-603b581a/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo">
+      </a>
     </div>
   </div>
 </body>
