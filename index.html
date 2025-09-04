@@ -24,10 +24,6 @@
       text-align: center;
       border: 2px solid #ffe3d2;
     }
-    .logo {
-      width: 160px;
-      margin-bottom: 20px;
-    }
     .profile-card img.profile {
       width: 150px;
       height: 150px;
@@ -45,6 +41,17 @@
       font-size: 1rem;
       margin: 6px 0;
       color: #444;
+    }
+    .company {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 5px;
+    }
+    .company img {
+      width: 30px;
+      height: 30px;
     }
     .profile-card a {
       color: #f26a21;
@@ -91,15 +98,15 @@
       .profile-card h3 {
         font-size: 0.95rem;
       }
+      .company img {
+        width: 25px;
+        height: 25px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="profile-card">
-    <!-- Legend Financial Logo -->
-    <a href="https://www.legendfinancial.co.uk/" target="_blank">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAflBMVEVHcEzvYR/vYR/vYR/vYR/vYSDvYR/vYR/vYSDvYR/tYSPvYR/vYR7////vXhfvWgfuVAADAwP83tPvVgu4uLjf4OD2pYj+6+TyhlzP0NDygVViYmLy8vKDgoL/+fbxd0XwZiWoqKj3r5bo6Oj3t6CXl5YyMjJRUVH0lnT3uKNSdUB8AAAADHRSTlMAoNHKqylO8BuXB1eGuF/gAAABUUlEQVQ4jYVT25KDMAi11ta6641OomY0Wmttd///BxeMMeg4Kw9KgMDJATzPyTU6h3Ec+tHV25HbKWYS3Lb+yDhSFKNF6+sh2bI866qqwx+dQpbkMrmz4p5Mcn+mOVkuy3065UWbOHlOETYH5c/vzjuIXpaEJXT48tL5xzqRINsYI062AL/fA35UkpT5DCNAfAXLD+OsvTAiwAB6AMNXQ2PVB7q+vOs6QQP1or+Qj2+CuEYgFp1QnDwfMzAC3sAOWMNHEtLOmSRoFlClSAU2qHImDZIF/CAVmwB4J9uAVQnFINoSZwdS6A9o3W9Asmc2DXyaYeFpfiYnSoHiFQxRnOrasKjEUgGpZs0aQEoq8DFk/c7Nsu1W+q0ETK0YLQIzdTQwWalMlzSAEERW+7ADY0Yusw0b+glBGbuR2x/alA3t4dgfL87x6lGS4P/lJdld/z/vIi/lVFijogAAAABJRU5ErkJggg==" alt="Legend Financial Logo" class="logo">
-    </a>
 
     <!-- Profile Image -->
     <img src="https://media.licdn.com/dms/image/v2/C4D03AQGavE114_u0xw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1622659611979?e=1759968000&v=beta&t=CRCInfvTGRTh9l7JO4IcXD6REsIg-Qfmbw7ha6oPFts" alt="JC" class="profile">
@@ -107,7 +114,12 @@
     <!-- Profile Info -->
     <h1>JC</h1>
     <h3>Senior Tax Partner</h3>
-    <h3><a href="https://www.legendfinancial.co.uk/">Legend Financial</a></h3>
+    <h3 class="company">
+      <a href="https://www.legendfinancial.co.uk/">Legend Financial</a>
+      <a href="https://www.legendfinancial.co.uk/">
+        <img src="https://media.licdn.com/dms/image/v2/C4D0BAQHY1zYpaPD91w/company-logo_200_200/company-logo_200_200/0/1630579234877/legend_financial_and_tax_advisers_limited_logo?e=2147483647&v=beta&t=Nf867abQBBJ_1oFHhlBfDoLFKN7s2ykU5yfbdZE1ev0" alt="Legend Financial Logo">
+      </a>
+    </h3>
 
     <!-- Contact -->
     <div class="footer">
